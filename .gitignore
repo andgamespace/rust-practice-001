@@ -1,0 +1,623 @@
+
+# ====================================================================
+# A. GENERAL & OS IGNORES (Apply to nearly all projects)
+# ====================================================================
+
+# ----------------------------------
+# 1. Operating System Files
+# ----------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Windows
+# Thumbs.db (already above)
+[Dd]esktop.ini
+
+# Linux
+# No common files to ignore unless a specific DE (e.g., KDE/Gnome) is used.
+
+# ----------------------------------
+# 2. General/Configuration/Security
+# ----------------------------------
+# Environment variables and secrets
+.env
+.env.local
+.venv
+.flaskenv
+.vault-file
+config/secrets.yml
+# NOTE: If you use a credentials file, add it here.
+
+# Log files
+*.log
+log/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Misc/Temp files
+*.tmp
+*.bak
+*.swp
+*~
+.hushlogin
+
+# ====================================================================
+# B. IDE & Editor Ignores (User-specific files)
+# ====================================================================
+
+# ----------------------------------
+# 1. JetBrains (IntelliJ, PyCharm, CLion, RustRover, WebStorm, Rider, etc.)
+# ----------------------------------
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ----------------------------------
+# 2. Visual Studio & Rider (.NET/C#/C++)
+# ----------------------------------
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# ReSharper and other JetBrains
+*.resharper
+*.bak
+*.cache
+*.ncb
+*.aps
+
+# ----------------------------------
+# 3. VS Code
+# ----------------------------------
+.vscode/
+# NOTE: Uncomment the line below if you wish to ignore all VS Code settings.
+# If you share extensions/launch configs, you may want to keep the folder.
+#.vscode/*
+! .vscode/settings.json
+! .vscode/tasks.json
+! .vscode/launch.json
+! .vscode/extensions.json
+! .vscode/*.code-snippets
+
+# ----------------------------------
+# 4. Other Editors
+# ----------------------------------
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim/Neovim
+*.swp
+*.swo
+
+# Emacs
+#*#
+.#*
+
+# ====================================================================
+# C. LANGUAGE & FRAMEWORK ARTIFACTS
+# ====================================================================
+
+# ----------------------------------
+# 1. JavaScript / Node.js / TypeScript / Bun
+# ----------------------------------
+# Dependencies
+/node_modules
+/jspm_packages
+
+# Build outputs
+/dist
+/build
+/out
+/es
+/esm
+/lib
+/tmp
+
+# TypeScript
+*.tsbuildinfo
+# Compiled JavaScript from TypeScript
+*.js.map
+*.d.ts
+
+# Package manager lock files (UNCOMMENT if it is a LIBRARY/Module)
+# NOTE: For most APPLICATIONS, you should **KEEP** lock files.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Next.js / Gatsby / SvelteKit / Nuxt.js
+.next/
+.svelte-kit/
+.nuxt/
+.cache/
+/public/build/
+/static/build/
+
+# ----------------------------------
+# 2. Frontend Frameworks (React, Vue, Angular, Svelte)
+# ----------------------------------
+# Angular
+.angular/
+coverage/
+
+# Vue
+# Standard Vue build is covered by /dist and /out above
+# Vue CLI
+.history
+
+# ----------------------------------
+# 3. Rust (Cargo)
+# ----------------------------------
+# Build artifacts
+/target
+/Cargo.lock
+# NOTE: KEEP `Cargo.lock` for **EXECUTABLE** applications. Ignore for **LIBRARIES**.
+
+# Coverage
+*.profraw
+*.profdata
+.coverage
+
+# ----------------------------------
+# 4. Python
+# ----------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+# Windows specific
+Scripts/
+
+# Testing/Linter
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ----------------------------------
+# 5. C / C++ / CMAKE / Zig
+# ----------------------------------
+# General compiled files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+
+# CMake/Build systems
+/bin/
+/obj/
+/build/
+/target/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+CmakeFiles/
+compile_commands.json
+DartConfiguration.tcl
+Testing/
+_CPack_Packages/
+
+# Zig
+zig-cache/
+zig-out/
+
+# ----------------------------------
+# 6. C# / .NET / F#
+# ----------------------------------
+# Build folders
+[Bb]in/
+[Oo]bj/
+
+# NuGet/Package Manager
+# Dependency caches/restored packages
+.nuget/
+*.nuetpkg
+NuGet.config
+packages/
+
+# Project files
+*.user
+*.config.user
+*.resharper
+*.suo
+
+# ----------------------------------
+# 7. Go (Golang)
+# ----------------------------------
+# Compiled binaries
+*.exe
+*.test
+*.prof
+
+# Dependency management (vendor is often optional/ignored)
+vendor/
+# Dependencies cache
+go.mod.sum
+
+# Test coverage output
+coverage.out
+
+# ----------------------------------
+# 8. Swift / iOS / macOS
+# ----------------------------------
+# Build output
+/build/
+
+# Swift Package Manager (SPM)
+.swiftpm/
+.build/
+
+# Xcode specific files
+# Derived data (the main build output)
+DerivedData/
+# Workspace/Project data
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+# NOTE: You may need to ignore other plist/config files depending on the setup.
+
+# ----------------------------------
+# 9. Other Build Tooling
+# ----------------------------------
+# Docker
+.dockerignore
+# NOTE: Dockerfile is usually kept.
+
+# Terraform/IaC
+.terraform/
+# NOTE: .terraform.lock.hcl should usually be kept.
+
+# Vagrant
+.vagrant/
+
+
+# ====================================================================
+# A. GENERAL & OS IGNORES (Apply to nearly all projects)
+# ====================================================================
+
+# ----------------------------------
+# 1. Operating System Files
+# ----------------------------------
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Windows
+# Thumbs.db (already above)
+[Dd]esktop.ini
+
+# Linux
+# No common files to ignore unless a specific DE (e.g., KDE/Gnome) is used.
+
+# ----------------------------------
+# 2. General/Configuration/Security
+# ----------------------------------
+# Environment variables and secrets
+.env
+.env.local
+.venv
+.flaskenv
+.vault-file
+config/secrets.yml
+# NOTE: If you use a credentials file, add it here.
+
+# Log files
+*.log
+log/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Misc/Temp files
+*.tmp
+*.bak
+*.swp
+*~
+.hushlogin
+
+# ====================================================================
+# B. IDE & Editor Ignores (User-specific files)
+# ====================================================================
+
+# ----------------------------------
+# 1. JetBrains (IntelliJ, PyCharm, CLion, RustRover, WebStorm, Rider, etc.)
+# ----------------------------------
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ----------------------------------
+# 2. Visual Studio & Rider (.NET/C#/C++)
+# ----------------------------------
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.docstates
+
+# ReSharper and other JetBrains
+*.resharper
+*.bak
+*.cache
+*.ncb
+*.aps
+
+# ----------------------------------
+# 3. VS Code
+# ----------------------------------
+.vscode/
+# NOTE: Uncomment the line below if you wish to ignore all VS Code settings.
+# If you share extensions/launch configs, you may want to keep the folder.
+#.vscode/*
+! .vscode/settings.json
+! .vscode/tasks.json
+! .vscode/launch.json
+! .vscode/extensions.json
+! .vscode/*.code-snippets
+
+# ----------------------------------
+# 4. Other Editors
+# ----------------------------------
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim/Neovim
+*.swp
+*.swo
+
+# Emacs
+#*#
+.#*
+
+# ====================================================================
+# C. LANGUAGE & FRAMEWORK ARTIFACTS
+# ====================================================================
+
+# ----------------------------------
+# 1. JavaScript / Node.js / TypeScript / Bun
+# ----------------------------------
+# Dependencies
+/node_modules
+/jspm_packages
+
+# Build outputs
+/dist
+/build
+/out
+/es
+/esm
+/lib
+/tmp
+
+# TypeScript
+*.tsbuildinfo
+# Compiled JavaScript from TypeScript
+*.js.map
+*.d.ts
+
+# Package manager lock files (UNCOMMENT if it is a LIBRARY/Module)
+# NOTE: For most APPLICATIONS, you should **KEEP** lock files.
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+# bun.lockb
+
+# Next.js / Gatsby / SvelteKit / Nuxt.js
+.next/
+.svelte-kit/
+.nuxt/
+.cache/
+/public/build/
+/static/build/
+
+# ----------------------------------
+# 2. Frontend Frameworks (React, Vue, Angular, Svelte)
+# ----------------------------------
+# Angular
+.angular/
+coverage/
+
+# Vue
+# Standard Vue build is covered by /dist and /out above
+# Vue CLI
+.history
+
+# ----------------------------------
+# 3. Rust (Cargo)
+# ----------------------------------
+# Build artifacts
+/target
+/Cargo.lock
+# NOTE: KEEP `Cargo.lock` for **EXECUTABLE** applications. Ignore for **LIBRARIES**.
+
+# Coverage
+*.profraw
+*.profdata
+.coverage
+
+# ----------------------------------
+# 4. Python
+# ----------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+# Windows specific
+Scripts/
+
+# Testing/Linter
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ----------------------------------
+# 5. C / C++ / CMAKE / Zig
+# ----------------------------------
+# General compiled files
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.pdb
+
+# CMake/Build systems
+/bin/
+/obj/
+/build/
+/target/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CTestTestfile.cmake
+Makefile
+CmakeFiles/
+compile_commands.json
+DartConfiguration.tcl
+Testing/
+_CPack_Packages/
+
+# Zig
+zig-cache/
+zig-out/
+
+# ----------------------------------
+# 6. C# / .NET / F#
+# ----------------------------------
+# Build folders
+[Bb]in/
+[Oo]bj/
+
+# NuGet/Package Manager
+# Dependency caches/restored packages
+.nuget/
+*.nuetpkg
+NuGet.config
+packages/
+
+# Project files
+*.user
+*.config.user
+*.resharper
+*.suo
+
+# ----------------------------------
+# 7. Go (Golang)
+# ----------------------------------
+# Compiled binaries
+*.exe
+*.test
+*.prof
+
+# Dependency management (vendor is often optional/ignored)
+vendor/
+# Dependencies cache
+go.mod.sum
+
+# Test coverage output
+coverage.out
+
+# ----------------------------------
+# 8. Swift / iOS / macOS
+# ----------------------------------
+# Build output
+/build/
+
+# Swift Package Manager (SPM)
+.swiftpm/
+.build/
+
+# Xcode specific files
+# Derived data (the main build output)
+DerivedData/
+# Workspace/Project data
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+# NOTE: You may need to ignore other plist/config files depending on the setup.
+
+# ----------------------------------
+# 9. Other Build Tooling
+# ----------------------------------
+# Docker
+.dockerignore
+# NOTE: Dockerfile is usually kept.
+
+# Terraform/IaC
+.terraform/
+# NOTE: .terraform.lock.hcl should usually be kept.
+
+# Vagrant
+.vagrant/

@@ -1,0 +1,10 @@
+[package]
+name = "sqlite-todo-tui-app"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = "0.4.42"
+ratatui = "0.29.0"
+rayon = "1.11.0"
+tokio = "1.48.0"

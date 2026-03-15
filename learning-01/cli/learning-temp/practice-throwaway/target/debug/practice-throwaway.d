@@ -1,0 +1,1 @@
+/Users/ansh/repos/rust-practice-001/learning-01/cli/learning-temp/practice-throwaway/target/debug/practice-throwaway: /Users/ansh/repos/rust-practice-001/learning-01/cli/learning-temp/practice-throwaway/src/main.rs
